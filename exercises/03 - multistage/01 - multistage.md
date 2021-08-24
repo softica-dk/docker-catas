@@ -81,7 +81,7 @@ medusa        latest    8d8b2c95c500   9 seconds ago    11.5MB
 
 Wov, under 12 MB. 
 
-Let's see if it works. Sinse the Medusa container runs `medusa` as an entrypoint, we dont need to specify the medusa command, only the parameters.
+Let's see if it works. Since the Medusa container runs `medusa` as an entrypoint, we dont need to specify the medusa command, only the parameters.
 
 ```
 docker run medusa -h 
