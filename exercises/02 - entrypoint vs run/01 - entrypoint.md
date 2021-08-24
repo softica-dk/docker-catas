@@ -23,7 +23,7 @@ echo "
 </html>
 " > /usr/share/nginx/html/index.html
 
-# Execute the command specified as CMD in Dockerfile:
+# Execute the container params specified in the run command:
 exec "$@"
 ```
 
@@ -39,6 +39,11 @@ RUN chmod u+x /root/create-token-web.sh
 
 ENTRYPOINT ["/bin/sh", "/root/create-token-web.sh"]
 CMD ["nginx", "-g", "daemon off;"]
+```
+
+Lets build it
+```
+docker build -t hoeghh/token-web:1.0 .
 ```
 
 Now we can run our container
