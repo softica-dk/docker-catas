@@ -34,3 +34,6 @@ strict-transport-security: max-age=31536000
 ratelimit-limit: 200;w=21600
 ratelimit-remaining: 200;w=21600
 ```
+
+## More info
+Go to `https://docs.docker.com/docker-hub/download-rate-limit/` and `https://docs.docker.com/engine/reference/commandline/login/`
